@@ -1,0 +1,9 @@
+version: "3"
+services:
+  second-docker-container:
+    volumes:
+      - ./:/app
+      - /path/node_modules
+    environment:
+      - NODE_ENV=development
+    command: npm run dev
